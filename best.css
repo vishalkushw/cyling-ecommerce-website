@@ -1,0 +1,276 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  nav {
+   
+    width: 100%;
+    background-color: #d291bc;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent !important;
+  }
+  
+  
+  #section0 .logo {
+    color: #000000;
+    font-size: 30px;
+    padding-left: 40px;
+  
+  }
+  nav ul{
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  
+  }
+  
+  nav ul li {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #222;;
+  }
+
+  nav ul li a:hover{
+    background-color: black;
+    color: #fff;
+    
+  }
+  
+
+  #section0 .login{
+    padding-right: 30px;
+    display: flex;
+  }
+  
+  #section0 .login a{
+    color: #000000;
+    text-decoration: none;
+    margin: 10px;
+  }
+
+
+#section4{
+    display: grid;
+    padding-top: 60px; 
+  }
+  
+  #section4 .gallery h2{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Rochester", cursive;
+    color: #222222;
+  }
+  
+  #section4 .gallery .text {
+    text-align: center;
+    margin: 30px;
+  
+  }
+  #section4 .gallery .text a {
+    color: #000000;
+    text-decoration: none;
+    margin: 30px;
+    font-weight: 500;
+    font-size: 18px;
+  
+  
+  }
+  
+  
+  
+  #section4 .gallery .picture  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 40px;  
+    margin-bottom: 10px; 
+  }
+  
+  #section4 .gallery .picture img:hover{
+      border: 2px solid white;
+     
+  }
+  
+  
+  
+  
+  #section4 .gallery .picture .pic{
+    padding-left: 30px;
+  }
+  #section4 .gallery .picture img{
+    width: 100%;
+    height: 250px;
+  }
+  
+
+  
+
+#section05{
+    width: 100%;
+    height: 350px;
+    margin-top: 60px;
+  }
+  
+  #section05 .test{
+    display: flex;
+    font-size: 25px;
+    letter-spacing: 1px;
+    justify-content: center;
+    color: #222222;
+  }
+  
+  #section05 .icon img{
+    padding-left: 70px;
+    margin-bottom: 20px;
+   
+  }
+  #section05 .icon h1{
+    padding-left: 30px;
+  }
+  
+  #section05 .icon{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .section5  {
+    width: 100%;
+    background-color: #ebebeb;
+    color: #666666;
+    }
+    .section5 .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 30px;
+    padding-top: 40px;
+    text-align: center;
+    
+    }
+     .section5 .footer-container .footer-section h2 {
+    color: #222222;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    } 
+    .section5 .footer-bottom {
+    margin-top: 70px;
+    padding-left: 30px;
+    }
+  
+  .checkbtn{
+    font-size: 25px; 
+    display: none;
+    
+  }
+  
+   #check{
+    display: none;
+  } 
+  
+  
+
+@media screen and (max-width:768px){
+  
+  nav .checkbtn i{
+    display: block;
+   }
+
+
+   nav label{
+    display: block;
+   
+   }
+
+    nav ul {
+        position: fixed;
+        display: block;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        background-color: #babb;
+        height: 50%;
+        width: 100%;
+        
+    }
+
+    #check:checked ~#section0 nav ul{
+        left:0%;
+        
+    }
+
+    nav ul li{
+        margin: 20px;
+        
+    }
+
+    nav ul li a{
+      color: #fff;
+    }
+
+    .checkbtn{
+        display: block;
+        padding-right: 20px;
+    }
+
+    .login a{
+        display: none;
+    }
+
+    #section4 .gallery .picture  {
+      grid-template-columns: 1fr 1fr ;
+    
+    }
+  
+  .section5{
+    width: 100%;
+    height: auto;
+  }
+
+  .section5 .footer-container {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+
+
+@media screen and (max-width:425px){
+
+ 
+  
+
+  #section0 .text h1{
+    font-size: 30px;
+  }
+  
+  
+  #section4 .gallery .picture{
+    grid-template-columns: 1fr ;
+  } 
+
+ 
+  .section5{
+    width: 100%;
+    height: auto;
+  }
+  
+  .section5 .footer-container {
+    grid-template-columns: 1fr  ;
+  }
+
+
+}
